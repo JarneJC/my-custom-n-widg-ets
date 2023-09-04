@@ -44,10 +44,6 @@
         padding: 6px;
       }
 
-      .background {
-        background-color: #252525;
-      }
-
       .navMenu a:hover {
         color: #c9c9c9;
       }
@@ -56,27 +52,19 @@
 
   <body>
     <nav class="navMenu border">
-      <ul>
-        <li>
-          <a id="home" onclick="navigate(this.id)" href="#">
-            <i class="fa-solid fa-house fa-sm"></i>&nbsp;&nbsp;home</a
-          >
-        </li>
-        <li>
-          <a id="wdd" onclick="navigate(this.id)" href="#">
-            <i class="fa-solid fa-church"></i>&nbsp;&nbsp; wijdoendingen</a
-          >
-        </li>
-        <li>
-          <a id="icons" onclick="navigate(this.id)" href="#">
-            <i class="fa-solid fa-icons"></i>&nbsp;&nbsp; icons</a
-          >
-        </li>
-      </ul>
+      <a id="home" onclick="navigate(this.id)" href="#">
+        <i class="fa-solid fa-house fa-sm"></i>&nbsp;&nbsp;home</a
+      >
+      <a id="wdd" onclick="navigate(this.id)" href="#">
+        <i class="fa-solid fa-church"></i>&nbsp;&nbsp; wijdoendingen</a
+      >
+      <a id="icons" onclick="navigate(this.id)" href="#">
+        <i class="fa-solid fa-icons"></i>&nbsp;&nbsp; icons</a
+      >
     </nav>
 
     <script>
-      let direction = "horizontal";
+      let direction = "vertical";
       if (direction === "vertical") {
         document.head.insertAdjacentHTML(
           "beforeend",
