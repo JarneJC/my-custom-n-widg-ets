@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-
-    <!-- Google Font -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
-    <!-------->
+    <link rel="stylesheet" href="fonts.css" />
 
     <style>
+      body {
+        /* background: #232323; */
+      }
+
       * {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
       }
 
       .navMenu {
-        font-family: 'Source Code Pro', monospace;
-        padding: 8px;
-        text-align: center;
-        margin: 7px auto;
+        font-family: iAWriterMono, monospace;
+        font-weight: bold;
         width: fit-content;
       }
 
       .navMenu a {
-        color: #ffffff;
+        padding: 5px;
+        color: rgba(255, 255, 255, 0.9);
         text-decoration: none;
         display: inline-block;
-        padding: 6px;
-      }
-
-      .background {
-        background-color: #ece5f0;
-      }
-
-      .border {
-/*         border: 1px solid #cccccc; */
       }
 
       .navMenu a:hover {
-        color: #c9c9c9;
+        color: rgb(77, 171, 154);
       }
     </style>
   </head>
@@ -69,7 +55,7 @@
       if (direction === "vertical") {
         document.head.insertAdjacentHTML(
           "beforeend",
-          `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`
+          `<style>.navMenu a {display: block; text-align:left; } i{width:15px;} .navMenu{}</style>`
         );
       }
 
@@ -78,21 +64,21 @@
           window
             .open(
               "https://www.notion.so/jarnecooijmans/Home-d2a5e545f8c648ba8fab754c72c468f9?pvs=4",
-              "_blank"
+              "_self"
             )
             .focus();
         else if (id == "wdd")
           window
             .open(
               "https://www.notion.so/jarnecooijmans/Wij-Doen-Dingen-73c7aa61980c4318821fb9f9665b6722?pvs=4",
-              "_blank"
+              "_self"
             )
             .focus();
         else if (id == "icons")
           window
             .open(
               "https://www.notion.so/jarnecooijmans/4dd52d535dab492bb7bd987469e3847e?v=6ecc5d56a99a45a38bb3858c196f769a&pvs=4",
-              "_blank"
+              "_self"
             )
             .focus();
       }
