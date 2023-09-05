@@ -12,7 +12,7 @@
 }
 
 body {
-  /* background: #232323; */
+  background: #232323;
   font-family: monospace;
   min-height: 100vh;
   display: inline;
@@ -22,12 +22,12 @@ body {
 
 .clock-container {
   width: 360px;
-  magin: 0px;
+  margin: 0px;
   /* background-color: #232323; */
-/*   border-radius: 5px;
-  padding: 30px 0px; */
-/*   border: solid 3px white;
-  box-shadow: 2px 2px 1px 0px white; */
+  border-radius: 5px;
+  /* padding: 30px 0px;  */
+  /* border: solid 3px white; */
+  /* box-shadow: 2px 2px 1px 0px white; */
   display: flex;
 }
 .clock-col {
@@ -45,13 +45,14 @@ body {
   border-radius: 50%;
   display: block;
   position: absolute;
-  right: -15px;
+  right: -8px;
 }
 .clock-col:not(:last-child):before {
-  top: 35%;
+  bottom: 45%;
+  visibility: hidden;
 }
 .clock-col:not(:last-child):after {
-  top: 50%;
+  bottom: 30%;
 }
 .clock-timer:before {
   color: white;
@@ -60,16 +61,16 @@ body {
 }
 .clock-label {
   color: white;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 0.7rem;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 @media (max-width: 200px) {
   .clock-container {
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-top: 40px; */
+    /* padding-bottom: 40px; */
   }
 
   .clock-col + .clock-col {
