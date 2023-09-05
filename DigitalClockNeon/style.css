@@ -3,12 +3,15 @@
 }
 .clock-hours:before {
   content: var(--timer-hours);
+  padding-left: 5px;
 }
 .clock-minutes:before {
   content: var(--timer-minutes);
+  padding-left: 5px;
 }
 .clock-seconds:before {
   content: var(--timer-seconds);
+  padding-left: 5px;
 }
 
 body {
@@ -20,7 +23,7 @@ body {
 }
 
 .clock-container {
-  width: 360px;
+  width: fit-content;
   margin: 0px;
   border-radius: 5px;
   display: flex;
@@ -39,7 +42,7 @@ body {
   border-radius: 50%;
   display: block;
   position: absolute;
-  right: -8px;
+  right: -5px;
 }
 .clock-col:not(:last-child):before {
   bottom: 45%;
@@ -58,18 +61,4 @@ body {
   text-transform: lowercase;
   font-size: 0.7rem;
   margin-top: 5px;
-}
-
-@media (max-width: 200px) {
-  .clock-container {
-    flex-direction: column;
-    width: auto;
-  }
-
-  .clock-col + .clock-col {
-    margin-top: 20px;
-  }
-  .clock-col:before, .clock-col:after {
-    display: none !important;
-  }
 }
