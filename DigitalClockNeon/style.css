@@ -63,6 +63,6 @@ body {
   margin-top: 5px;
 }
 
-.notion-embed__container>iframe {
+body > iframe {
   background-color: transparent !important;
-  }
+}
