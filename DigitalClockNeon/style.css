@@ -62,3 +62,7 @@ body {
   font-size: 0.7rem;
   margin-top: 5px;
 }
+
+.notion-embed__container>iframe {
+  background-color: transparent !important;
+  }
