@@ -22,8 +22,7 @@ body {
 
 .clock-container {
   width: 360px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  magin: 0px;
   /* background-color: #232323; */
   border-radius: 5px;
   padding: 30px 0px;
