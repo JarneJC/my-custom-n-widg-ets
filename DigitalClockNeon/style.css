@@ -63,6 +63,6 @@ body {
   margin-top: 5px;
 }
 
-body > iframe {
+body {
   background-color: transparent !important;
 }
