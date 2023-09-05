@@ -24,10 +24,10 @@ body {
   width: 360px;
   magin: 0px;
   /* background-color: #232323; */
-  border-radius: 5px;
-  padding: 30px 0px;
-  border: solid 3px white;
-  box-shadow: 2px 2px 1px 0px white;
+/*   border-radius: 5px;
+  padding: 30px 0px; */
+/*   border: solid 3px white;
+  box-shadow: 2px 2px 1px 0px white; */
   display: flex;
 }
 .clock-col {
