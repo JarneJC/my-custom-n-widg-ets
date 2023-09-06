@@ -3,23 +3,28 @@
 }
 .clock-hours:before {
   content: var(--timer-hours);
-  padding-left: 5px;
+  color:  rgba(255, 255, 255, 0.9);
 }
 .clock-minutes:before {
   content: var(--timer-minutes);
-  padding-left: 5px;
+  padding-left: 1vw;
+  color:  rgba(255, 255, 255, 0.9);
 }
 .clock-seconds:before {
   content: var(--timer-seconds);
-  padding-left: 5px;
+  color:  rgba(255, 255, 255, 0.3);
+  font-size: 10vw !important;
+  height: 100% !important;
+  margin-top: auto;
+  margin-bottom: 0;
+  display: block;
+  /* position: absolute; */
+  /* bottom: 2vw; */
 }
 
 body {
   font-family: monospace;
-  min-height: 100vh;
   display: inline;
-  align-items: center;
-  justify-content: center;
 }
 
 .clock-container {
@@ -28,41 +33,35 @@ body {
   border-radius: 5px;
   display: flex;
 }
+
 .clock-col {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   position: sticky;
 }
-.clock-col:not(:last-child):before, .clock-col:not(:last-child):after {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  right: -5px;
-}
-.clock-col:not(:last-child):before {
-  bottom: 45%;
-  visibility: hidden;
-}
-.clock-col:not(:last-child):after {
-  bottom: 30%;
-}
+
 .clock-timer:before {
-  color:  rgba(255, 255, 255, 0.9);
-  font-size: 4.2rem;
+  font-size: 25vw;
   text-transform: uppercase;
 }
-.clock-label {
-  color: rgba(255, 255, 255, 0.9);
-  text-transform: lowercase;
-  font-size: 0.7rem;
-  margin-top: 5px;
+
+span {
+  display: inline-block;
+  position: absolute;
+  right: -2vw;
+  bottom: 50%;
+  top: 50%;
+  font-family: monospace;
+  font-size: 7.5vw;
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
-body {
-  background-color: transparent !important;
+@keyframes example {
+  0%   {color: rgba(255, 255, 255, 0.9);;}
+  50%   {color: rgba(255, 255, 255, 0.9);;}
+  51%   {color: transparent;}
+  100%   {color: transparent;}
 }

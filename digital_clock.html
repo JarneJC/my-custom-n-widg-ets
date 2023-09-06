@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0044)https://neonone1234.github.io/clock-digital/ -->
-<html
-  lang="en"
-  style="--timer-day: &#39;Mo&#39;; --timer-hours: &#39;23&#39;; --timer-minutes: &#39;05&#39;; --timer-seconds: &#39;32&#39;;"
->
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -11,10 +8,12 @@
     <link rel="stylesheet" href="./DigitalClockNeon/reset.min.css" />
     <link rel="stylesheet" href="./DigitalClockNeon/style.css" />
     <link rel="stylesheet" href="fonts.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <style>
       body {
-        /* background: #232323; */
+        /* background-color: transparent !important; */
+        background: #232323;
       }
 
       p {
@@ -25,21 +24,18 @@
   <body>
     <!-- partial:index.partial.html -->
     <div class="clock-container">
-      <div class="clock-col">
+      <!-- <div class="clock-col">
         <p class="clock-day clock-timer"></p>
-        <p class="clock-label">Day</p>
-      </div>
+        <p class="dot c-day">.</p>
+      </div> -->
       <div class="clock-col">
-        <p class="clock-hours clock-timer"></p>
-        <p class="clock-label">Hours</p>
+        <p class="clock-hours clock-timer"><span>:</span></p>
       </div>
       <div class="clock-col">
         <p class="clock-minutes clock-timer"></p>
-        <p class="clock-label">Minutes</p>
       </div>
       <div class="clock-col">
         <p class="clock-seconds clock-timer"></p>
-        <p class="clock-label">Seconds</p>
       </div>
     </div>
     <!-- partial -->
