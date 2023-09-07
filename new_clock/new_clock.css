@@ -1,49 +1,66 @@
 body {
-    height: 100vh;
-    margin: 0;
-    background: #222;
-    color: rgba(255, 255, 255, 0.9);
-  }
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  user-select: none;
+}
 
-.time
-{
+.time {
   margin-top: -5vw;
   width: auto;
 }
-  .h, .m {
-    font-size: 20vw;
+
+.h,
+.m {
+  font-size: 30vw;
+}
+
+.m {
+  padding-left: 1vw;
+}
+
+.dots {
+  font-family: monospace !important;
+  font-size: 10vw;
+  margin-left: -1vw;
+  margin-right: -2vw;
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.ampm,
+.s {
+  margin-left: 0vw;
+  font-size: 8vw;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.date {
+  display: block;
+  margin-top: -8vw;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+
+@keyframes example {
+  0% {
+    color: rgba(255, 255, 255, 0.9);
   }
 
-  .m {
-    padding-left: 1vw;
-  }
-  
-  .dots {
-    font-family: monospace !important;
-    font-size: 10vw;
-    margin-left: -1vw;
-    margin-right: -2vw;
-    animation-name: example;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+  50% {
+    color: rgba(255, 255, 255, 0.9);
   }
 
-  .ampm, .s {
-    margin-left: 0vw;
-    font-size: 6vw;
-    color: rgba(255, 255, 255, 0.3);
+  51% {
+    color: transparent;
   }
-  
-  .date {
-    display: block;
-    margin-top: -4vw;
-    font-size: 4vw;
-  }
-  
 
-  @keyframes example {
-    0%   {color: rgba(255, 255, 255, 0.9);;}
-    50%   {color: rgba(255, 255, 255, 0.9);;}
-    51%   {color: transparent;}
-    100%   {color: transparent;}
+  100% {
+    color: transparent;
   }
+}
